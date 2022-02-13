@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.E2EProject.Listeners"/>
+  </listeners>
+  <test name="Validating the user(failed)">
+    <classes>
+      <class name="Academy.E2EProject.HomePage">
+        <methods>
+          <include name="initilizer"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.HomePage -->
+    </classes>
+  </test> <!-- Validating the user(failed) -->
+  <test name="Validation of Navigation(failed)">
+    <classes>
+      <class name="Academy.E2EProject.validateNavBar">
+        <methods>
+          <include name="initilizer"/>
+          <include name="basePageNavigation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.validateNavBar -->
+    </classes>
+  </test> <!-- Validation of Navigation(failed) -->
+  <test name="Validation of title(failed)">
+    <classes>
+      <class name="Academy.E2EProject.validatetitle">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="teardown"/>
+          <include name="initilizer"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.validatetitle -->
+    </classes>
+  </test> <!-- Validation of title(failed) -->
+</suite> <!-- Failed suite [Suite] -->
