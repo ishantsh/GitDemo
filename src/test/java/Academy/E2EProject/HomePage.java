@@ -62,6 +62,7 @@ public class HomePage extends base {
 	@AfterTest
 	public void teardown() {
 		driver.close();
+		System.out.println("hi this is git testing");
 	}
 
 }
